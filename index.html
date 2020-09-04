@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>Storie di ordinaria ordinarìa</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/teleindicadores-1" type="text/css" />
+
+  <!-- <meta name="description" content="Flow in space and get lost... Diego Turtulici personal website" /> -->
+
+
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="manifest" href="manifest.json" />
+
+
+
+  <meta name="theme-color" content="#0D1D31" />
+
+
+  <meta name="msapplication-navbutton-color" content="#0D1D31" />
+
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+
+  <link rel="shortcut icon" href="#" />
+
+  <!-- <link rel="icon" sizes="256x256" href="http://flowin.space/images/favicon256.png" type="image/x-icon"> -->
+
+</head>
+
+<body>
+  <script type="text/javascript" src="js/howler.min.js"></script>
+
+  <!-- <div id="podcast">
+
+    <ul>
+      <li>
+        <a href="http://radioeco.it/programmi-e-podcast/146-1953" target="_blank">3x01 terraterristi</a>
+      </li>
+
+      <li>
+        <a href="http://radioeco.it/programmi-e-podcast/146-1924" target="_blank">2x01 buchi</a>
+      </li>
+
+      <li>
+        <a href="http://radioeco.it/programmi-e-podcast/146-1897" target="_blank">1x01 in power Things we play</a>
+      </li>
+    </ul>
+  </div> -->
+
+
+  <div id="main">
+    <!-- <a href="http://radioeco.it/programmi-e-podcast/146/"> -->
+      <h3>STORIE DI ORDINARIA</h3>
+      <br>
+      <h2>ORDINARÌA</h2>
+    <!-- </a> -->
+    <br>
+
+    <ol>
+      <li>
+        <h4>#1 In power Things we play</h4>
+        <audio id="p1" controls>
+          <source src="puntate/PILOTA_ORDINARìA.mp3" type="audio/mp3" controls>
+        </audio>
+      </li>
+      <li>
+        <h4>#2 Buchi</h4>
+        <audio id="p2" controls>
+          <source src="puntate/_.mp3" type="audio/mp3" controls disabled>
+        </audio>
+      </li>
+      <li>
+        <h4>#3 Terraterristi</h4>
+        <audio id="p3" controls>
+          <source src="puntate/storiediordinariaordinaria_3p.mp3" type="audio/mp3" controls>
+        </audio>
+      </li>
+    </ol>
+    
+
+        <!-- <script>
+                  // https://www.html5rocks.com/en/tutorials/webaudio/intro/
+                  // 
+                  //
+            
+                  // Existing code unchanged.
+                    window.onload = function () {
+                      var context = new AudioContext();
+                  // Setup all nodes
+                    }
+        
+                    // One-liner to resume playback when user interacted with the page.
+                    document.querySelector('#main').addEventListener('click', function () {
+                      context.resume().then(() => {
+                        console.log('Playback resumed successfully');
+                      });
+                    });
+                  var sound = new Howl({
+                    src: ['puntate/PILOTA_ORDINARìA.mp3']
+                  });
+                </script> -->
+
+
+    </div>
+
+
+  <!-- <div id="live_container">
+    <div>
+      <p>Mercoledì ore 18:00</p>
+    </div>
+
+    <audio id="live_stream" controls>
+      <source src="http://listen.radioeco.it:8000/outdoor.ogg" type="audio/ogg">
+    </audio>
+  </div> -->
+  <!-- <a href="http://listen.radioeco.it:8000/outdoor.ogg">streaming</a> -->
+
+  <!-- <script type="text/javascript" src="TweenMax.min.js"></script> -->
+
+  <!-- <script>
+    var d = new Date();
+        day = parseInt(d.getDay());
+        hour = parseInt(d.getHours());
+        min = parseInt(d.getMinutes());
+
+
+    function toggleLiveStream() {
+      live_stream_visibility = document.querySelector('#live_stream').style.visibility;
+
+      if (live_stream_visibility == 'visible') {
+        document.querySelector('#live_stream').style.visibility = 'hidden';
+      }
+      else {
+        document.querySelector('#live_stream').style.visibility = 'visible';
+      }
+    }
+
+    if (day == 3 && (hour >= 17 && min > 54 || hour == 18) && hour <= 19) {
+    }
+
+  </script> -->
+
+</body>
+
+
+</html>

@@ -1,0 +1,185 @@
+@keyframes slideIn {
+  0% {
+    /*@keyframes reveal {*/
+    transform: translateY(200%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+/*@keyframes unreveal {*/
+@keyframes slideOut {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(200%);
+  }
+}
+
+body {
+  background-color: #222;
+  background: url('../img/bg.jpg');
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+  font-family: 'Teleindicadores1Regular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15pt;
+}
+a {
+  color: #fff;
+}
+
+::-moz-selection {
+   /* Code for Firefox */
+   color: #8f241a;
+   background: #5eba8f;
+   text-shadow: -2px 0 0 #9A8C19;
+}
+
+::selection {
+   color: #8f241a;
+   background: #5eba8f;
+   text-shadow: -2px 0 0 #9A8C19;
+}
+
+#main {
+  overflow: hidden;
+  position: absolute;
+  /* top: 46.5%; */
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-family: 'Teleindicadores1Regular';
+  text-align: center;
+  color: #5eba8f;
+  text-shadow: -2px 0 0 #8f241a;
+  width: 70%;
+  border: 10px solid rgba(143,36,26, .5);
+  box-shadow: 0 0 0 4px rgba(154,140,25, .5);
+  background: rgba(34, 34, 34, 0.6);
+  cursor: default;
+  height: 85px;
+  padding: 20px;
+  
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  
+  transition: all .6s;
+}
+#main a {
+  text-decoration: none;
+}
+#main:hover,
+#main:active,
+#main:focus {
+  background: #5eba8fd8;
+  text-shadow: -2px 0 0 #9A8C19;
+  border: 10px solid #9A8C19;
+  box-shadow: 0 0 0 4px rgba(143,36,26, .5);
+  color: #8f241a;
+  height: 80%;
+  transition: all 1s;
+  overflow: scroll;
+  /* filter: blur(1px);
+  -moz-filter: blur(1px);
+  -webkit-filter: blur(1px); */
+
+  /*-webkit-transform: rotateY(45deg); /* Chrome, Safari, Opera  */*/
+  /*transform: rotateY(45deg);*/
+}
+#main h3 {
+  font-weight: 500;
+  font-size: 30pt;
+  margin: 0;
+}
+#main h2 {
+  font-weight: 900;
+  font-size: 50pt;
+  margin: 0;
+}
+#main h1 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 80pt;
+}
+
+#main ol > li > h4 {
+  margin: 15px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 20pt;
+}
+
+#main>ol {
+  list-style: none;
+  padding: 0;
+  margin-top: 50px;
+}
+
+div#live_container {
+  background-color: rgba(25, 25, 25, 1);
+  position: fixed;
+  width: 100%;
+  min-height: 30px;
+  margin: 0;
+  padding: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: .8;
+  border-top: 1px solid rgba(100, 100, 100, 0.4);
+  box-shadow: 0 2px 20px 2px rgba(0,0,0,1);
+}
+
+#main ol > li > audio {
+  margin-bottom: 35px;
+}
+
+audio#live_stream {
+  transform: translate(-50%, 0);
+  left: 50%;
+  /*top: 50%;*/
+  min-width: 300px;
+  background: transparent;
+  border-radius: 10px;
+  position: absolute;
+  right: 30px;
+  padding: 0;
+  margin: 0;
+  top: 5px;
+
+  animation: reveal .5s;
+
+  visibility: hidden;
+  -webkit-filter: url(#duotone);
+  filter: url(#duotone);
+}
+
+#live_container p {
+  padding: 0;
+  left: 20px;
+  color: #5eba8f;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+div#podcast {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
